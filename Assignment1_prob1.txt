@@ -1,0 +1,187 @@
+manasiborade@manasiborade07:~$ pwd
+/home/manasiborade
+manasiborade@manasiborade07:~$ ls
+AA           Demo2.sh          a1.txt  add_java.sh        bb      d         fam_tree  fruit.txt   user2
+Assignment1  Demo3.java        aaa     assignment1_prob2  c       da        file1     manasi.txt
+BB           Linus_Assignment  aaab    b                  c1.txt  daaa      file2     text1.txt
+CC           a                 ab      b1.txt             cdb     demo2.sh  file3     user1
+manasiborade@manasiborade07:~$ mkdir Linux_Assignment
+manasiborade@manasiborade07:~$ cd Linux_Assignment
+manasiborade@manasiborade07:~/Linux_Assignment$ touch file1.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ ls
+file1.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ mkdir docs
+manasiborade@manasiborade07:~/Linux_Assignment$ ls
+docs  file1.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ cp file1.txt docs/file2.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ ls
+docs  file1.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ cd docs
+manasiborade@manasiborade07:~/Linux_Assignment/docs$ ls
+file2.txt
+manasiborade@manasiborade07:~/Linux_Assignment/docs$ cd ..
+manasiborade@manasiborade07:~/Linux_Assignment$ chmod u+rwx,o+r-wx file2.txt
+chmod: cannot access 'file2.txt': No such file or directory
+manasiborade@manasiborade07:~/Linux_Assignment$ cd docs
+manasiborade@manasiborade07:~/Linux_Assignment/docs$ chmod u+rwx,o+r-wx file2.txt
+manasiborade@manasiborade07:~/Linux_Assignment/docs$ ls -s -a
+total 8
+4 .  4 ..  0 file2.txt
+manasiborade@manasiborade07:~/Linux_Assignment/docs$ ls -l -a
+total 8
+drwxr-xr-x 2 manasiborade manasiborade 4096 Mar  8 20:10 .
+drwxr-xr-x 3 manasiborade manasiborade 4096 Mar  8 20:03 ..
+-rwxr--r-- 1 manasiborade manasiborade    0 Mar  8 20:10 file2.txt
+manasiborade@manasiborade07:~/Linux_Assignment/docs$ ls
+file2.txt
+manasiborade@manasiborade07:~/Linux_Assignment/docs$ cd ..
+manasiborade@manasiborade07:~/Linux_Assignment$ ls
+docs  file1.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ find -type f -name "*.txt"
+./file1.txt
+./docs/file2.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ cd ..
+manasiborade@manasiborade07:~$ find -type f -name "*.txt"
+./Linux_Assignment/file1.txt
+./Linux_Assignment/docs/file2.txt
+./Assignment1/data.txt
+./manasi.txt
+./fam_tree/grand_fath/child1/a.txt
+./fam_tree/grand_fath/child1/d.txt
+./fam_tree/grand_fath/child1/c.txt
+./fam_tree/grand_fath/child1/b.txt
+./fam_tree/grand_fath/child2/e.txt
+./fam_tree/grand_fath/child2/f.txt
+./fam_tree/grand_fath/child3/h.txt
+./fam_tree/grand_fath/child3/g.txt
+./fam_tree/grand_fath/child4/i.txt
+./assignment1_prob2/fruit.txt
+./assignment1_prob2/data.txt
+./assignment1_prob2/input.txt
+./assignment1_prob2/numbers.txt
+./assignment1_prob2/duplicate.txt
+./assignment1_prob2/output.txt
+./text1.txt
+./fruit.txt
+./Linus_Assignment/file1.txt
+./Linus_Assignment/fil2.txt/file1.txt
+./Linus_Assignment/file.txt
+./a1.txt
+./c1.txt
+./b1.txt
+manasiborade@manasiborade07:~$ ls *.txt
+a1.txt  b1.txt  c1.txt  fruit.txt  manasi.txt  text1.txt
+manasiborade@manasiborade07:~$ grep "na" fruit.txt
+manasiborade@manasiborade07:~$ grep "pp" fruit.txt
+apple
+manasiborade@manasiborade07:~$ ipconfig
+Command 'ipconfig' not found, did you mean:
+  command 'iconfig' from deb ipmiutil (3.1.8-1)
+  command 'ifconfig' from deb net-tools (1.60+git20181103.0eebece-1ubuntu5)
+  command 'iwconfig' from deb wireless-tools (30~pre9-13.1ubuntu4)
+Try: sudo apt install <deb name>
+manasiborade@manasiborade07:~$ date
+Fri Mar  8 20:48:58 IST 2024
+manasiborade@manasiborade07:~$ time +%T
++%T: command not found
+
+real    0m0.681s
+user    0m0.202s
+sys     0m0.397s
+manasiborade@manasiborade07:~$ time %+T
+-bash: fg: %+T: no such job
+
+real    0m0.002s
+user    0m0.000s
+sys     0m0.002s
+manasiborade@manasiborade07:~$ date +%T
+20:49:58
+manasiborade@manasiborade07:~$ ip addr show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1480 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:33:fb:4f brd ff:ff:ff:ff:ff:ff
+    inet 192.168.60.218/20 brd 192.168.63.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fe33:fb4f/64 scope link
+       valid_lft forever preferred_lft forever
+manasiborade@manasiborade07:~$ zip -r docs.zip docs
+Command 'zip' not found, but can be installed with:
+sudo apt install zip
+manasiborade@manasiborade07:~$ sudo apt-get install zip
+[sudo] password for manasiborade:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  unzip
+The following NEW packages will be installed:
+  unzip zip
+0 upgraded, 2 newly installed, 0 to remove and 30 not upgraded.
+Need to get 350 kB of archives.
+After this operation, 930 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 unzip amd64 6.0-26ubuntu3.2 [175 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 zip amd64 3.0-12build2 [176 kB]
+Fetched 350 kB in 2s (212 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 24225 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-26ubuntu3.2_amd64.deb ...
+Unpacking unzip (6.0-26ubuntu3.2) ...
+Selecting previously unselected package zip.
+Preparing to unpack .../zip_3.0-12build2_amd64.deb ...
+Unpacking zip (3.0-12build2) ...
+Setting up unzip (6.0-26ubuntu3.2) ...
+Setting up zip (3.0-12build2) ...
+Processing triggers for man-db (2.10.2-1) ...
+manasiborade@manasiborade07:~$ zip -r docs.zip docs
+        zip warning: name not matched: docs
+
+zip error: Nothing to do! (try: zip -r docs.zip . -i docs)
+manasiborade@manasiborade07:~$ zip -r docs.zip docs
+        zip warning: name not matched: docs
+
+zip error: Nothing to do! (try: zip -r docs.zip . -i docs)
+manasiborade@manasiborade07:~$ zip docs.zip docs
+        zip warning: name not matched: docs
+
+zip error: Nothing to do! (docs.zip)
+manasiborade@manasiborade07:~$ zip -r docs.zip . -i docs
+        zip warning: zip file empty
+manasiborade@manasiborade07:~$ unzip docs.zip -d
+error:  must specify directory to which to extract with -d option
+manasiborade@manasiborade07:~$ cd Linux_assignment
+-bash: cd: Linux_assignment: No such file or directory
+manasiborade@manasiborade07:~$ cd Linux_Assignment
+manasiborade@manasiborade07:~/Linux_Assignment$ zip -r docs.zip . -i docs
+        zip warning: zip file empty
+manasiborade@manasiborade07:~/Linux_Assignment$ cd docs1
+-bash: cd: docs1: No such file or directory
+
+//zip and unzip
+
+manasiborade@manasiborade07:~/Linux_Assignment$ mkdir docs1
+manasiborade@manasiborade07:~/Linux_Assignment$ unzip docs.zip -d docs1
+Archive:  docs.zip
+warning [docs.zip]:  zipfile is empty
+manasiborade@manasiborade07:~/Linux_Assignment$ nano file1.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ cat file1.txt
+q
+
+manasiborade@manasiborade07:~/Linux_Assignment$ nano file1.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ cat file1.txt
+manasi kailas borade
+
+// replace new word with old   word
+manasiborade@manasiborade07:~/Linux_Assignment$ sed -i 's/old_word/new_word/g' file1.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ cat file1.txt
+manasi kailas borade
+
+manasiborade@manasiborade07:~/Linux_Assignment$ sed -i 's/old_word/new_word/g' file1.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ sed -i 's/manasi/manu/g' file1.txt
+manasiborade@manasiborade07:~/Linux_Assignment$ cat file1.txt
+manu kailas borade
