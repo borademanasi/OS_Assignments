@@ -1,0 +1,211 @@
+manasiborade@manasiborade07:~$ pwd
+/home/manasiborade
+manasiborade@manasiborade07:~$ mkdir assignment1_prob2
+manasiborade@manasiborade07:~$ cd assignment1_prob2
+manasiborade@manasiborade07:~/assignment1_prob2$ touch data.txt
+manasiborade@manasiborade07:~/assignment1_prob2$ ls
+data.txt
+
+manasiborade@manasiborade07:~/assignment1_prob2$ cat data.txt
+
+Like forests, wildlife consisting of animals, birds, insects, etc.
+living in the forest is a national resource, which not only helps
+in maintaining the ecological balance but is also beneficial for various
+economic activities that generate revenue from tourism. The rich flora
+and fauna also play a major role in maintaining the ecological balance of
+a region. There was a time when human needs were minimal and there was
+bare interference in the wildlife. There is no denying the fact that due to urbanization
+,pollution, and human interventions wildlife is rapidly disappearing from the planet.
+Today the biodiversity of the world is threatened due to the extinction of species.
+ There are thirty-five hotspots around the world, which supports 43% of birds, mammals, reptiles,
+and amphibians as endemic. The IUCN has compiled a list of species and has classified the different
+ species under extinct, critically endangered, less endangered, vulnerable, near threatened, and least
+concerned. This list is called the Red Data Book. According to the World Wildlife Fund (WWF), the number
+ of birds, animals, marine and freshwater creatures has dropped by almost one-third of its earlier population.
+Today the biodiversity of the world is threatened due to the extinction of species.
+ There are thirty-five hotspots around the world, which supports 43% of birds, mammals, reptiles,
+and amphibians as endemic. The IUCN has compiled a list of species and has classified the
+ different
+
+manasiborade@manasiborade07:~/assignment1_prob2$ head -n 10 data.txt
+
+Like forests, wildlife consisting of animals, birds, insects, etc.
+living in the forest is a national resource, which not only helps
+in maintaining the ecological balance but is also beneficial for various
+economic activities that generate revenue from tourism. The rich flora
+and fauna also play a major role in maintaining the ecological balance of
+a region. There was a time when human needs were minimal and there was
+bare interference in the wildlife. There is no denying the fact that due to urbanization
+,pollution, and human interventions wildlife is rapidly disappearing from the planet.
+Today the biodiversity of the world is threatened due to the extinction of species.
+ There are thirty-five hotspots around the world, which supports 43% of birds, mammals, reptiles,
+
+manasiborade@manasiborade07:~/assignment1_prob2$ tail -n 5 data.txt
+
+
+concerned. This list is called the Red Data Book. According to the World Wildlife Fund (WWF), the number
+ of birds, animals, marine and freshwater creatures has dropped by almost one-third of its earlier population.
+Today the biodiversity of the world is threatened due to the extinction of species.
+ There are thirty-five hotspots around the world, which supports 43% of birds, mammals, reptiles,
+and amphibians as endemic. The IUCN has compiled a list of species and has classified the different
+
+manasiborade@manasiborade07:~/assignment1_prob2$ touch numbers.txt
+manasiborade@manasiborade07:~/assignment1_prob2$ ls
+data.txt  numbers.txt
+manasiborade@manasiborade07:~/assignment1_prob2$ cat numbers.txt
+
+656 565464 546464 5456444 654646464 4 545644 654
+5464 54 554 464 64 84 84 5468
+46645564 65464 4 5765 484654657 65465746 446546 4654
+54657564 8465457 654557 654545 6546574 654454 654654
+65456746 45467456 4545454 546545484 6545644 654544 54654
+654564 6464 4654 4654 47 54 454 5454 65 5 678 5 5
+6 564464 544 884 5654 654
+ 6545646464 654654654 65456464 465465 46132 5465
+564646
+6465644444464
+6654646574
+6546548456
+ 6548
+564564556478946444321
+6548765456544
+6546576454957654 654657 6548674564 6575645675 874564
+6576465764
+65465454654 6547654657 4654657564 64875467454
+654687 564567 567876424 5457 5494 79754 654657654
+654567546
+
+manasiborade@manasiborade07:~/assignment1_prob2$ head -n 15 numbers.txt
+
+656 565464 546464 5456444 654646464 4 545644 654
+5464 54 554 464 64 84 84 5468
+46645564 65464 4 5765 484654657 65465746 446546 4654
+54657564 8465457 654557 654545 6546574 654454 654654
+65456746 45467456 4545454 546545484 6545644 654544 54654
+654564 6464 4654 4654 47 54 454 5454 65 5 678 5 5
+6 564464 544 884 5654 654
+ 6545646464 654654654 65456464 465465 46132 5465
+564646
+6465644444464
+6654646574
+6546548456
+ 6548
+564564556478946444321
+6548765456544
+
+manasiborade@manasiborade07:~/assignment1_prob2$ tail -n 3 numbers.txt
+
+65465454654 6547654657 4654657564 64875467454
+654687 564567 567876424 5457 5494 79754 654657654
+654567546
+
+manasiborade@manasiborade07:~/assignment1_prob2$ touch input.txt
+manasiborade@manasiborade07:~/assignment1_prob2$ ls
+data.txt  input.txt  numbers.txt
+
+manasiborade@manasiborade07:~/assignment1_prob2$ cat input.txt
+
+Like forests, wildlife consisting of animals, birds, insects, etc.
+living in the forest is a national resource, which not only helps
+in maintaining the ecological balance but is also beneficial for various
+economic activities that generate revenue from tourism. The rich flora
+and fauna also play a major role in maintaining the ecological balance of
+a region
+
+manasiborade@manasiborade07:~/assignment1_prob2$ tr '[:lower:]' '[:upper:]' < input.txt > output.txt
+manasiborade@manasiborade07:~/assignment1_prob2$ cat output.txt
+
+LIKE FORESTS, WILDLIFE CONSISTING OF ANIMALS, BIRDS, INSECTS, ETC.
+LIVING IN THE FOREST IS A NATIONAL RESOURCE, WHICH NOT ONLY HELPS
+IN MAINTAINING THE ECOLOGICAL BALANCE BUT IS ALSO BENEFICIAL FOR VARIOUS
+ECONOMIC ACTIVITIES THAT GENERATE REVENUE FROM TOURISM. THE RICH FLORA
+AND FAUNA ALSO PLAY A MAJOR ROLE IN MAINTAINING THE ECOLOGICAL BALANCE OF
+A REGION
+
+manasiborade@manasiborade07:~/assignment1_prob2$ touch duplicate.txt
+manasiborade@manasiborade07:~/assignment1_prob2$ ls
+data.txt  duplicate.txt  input.txt  numbers.txt  output.txt
+manasiborade@manasiborade07:~/assignment1_prob2$ cat output.txt
+
+LIKE FORESTS, WILDLIFE CONSISTING OF ANIMALS, BIRDS, INSECTS, ETC.
+LIVING IN THE FOREST IS A NATIONAL RESOURCE, WHICH NOT ONLY HELPS
+IN MAINTAINING THE ECOLOGICAL BALANCE BUT IS ALSO BENEFICIAL FOR VARIOUS
+ECONOMIC ACTIVITIES THAT GENERATE REVENUE FROM TOURISM. THE RICH FLORA
+AND FAUNA ALSO PLAY A MAJOR ROLE IN MAINTAINING THE ECOLOGICAL BALANCE OF
+A REGION
+
+manasiborade@manasiborade07:~/assignment1_prob2$ cat duplicate.txt
+Like forests, wildlife consisting of animals, birds, insects, etc.
+living in the forest is a national resource, which not only helps
+in maintaining the ecological balance but is also beneficial for various
+economic activities that generate revenue from tourism. The rich flora
+and fauna also play a major role in maintaining the ecological balance of
+a region. There was a time when human needs were minimal and there was
+bare interference in the wildlife. There is no denying the fact that due to urbanization
+,pollution, and human interventions wildlife is rapidly disappearing from the planet.
+Today the biodiversity of the world is threatened due to the extinction of species.
+ There are thirty-five hotspots around the world, which supports 43% of birds, mammals, reptiles,
+and amphibians as endemic. The IUCN has compiled a list of species and has classified the different
+ species under extinct, critically endangered, less endangered, vulnerable, near threatened, and least
+concerned. This list is called the Red Data Book. According to the World Wildlife Fund (WWF), the number
+ of birds, animals, marine and freshwater creatures has dropped by almost one-third of its earlier population.
+Today the biodiversity of the world is threatened due to the extinction of species.
+ There are thirty-five hotspots around the world, which supports 43% of birds, mammals, reptiles,
+and amphibians as endemic. The IUCN has compiled a list of species and has classified the 
+different
+
+manasiborade@manasiborade07:~/assignment1_prob2$ uniq duplicate.txt
+
+Like forests, wildlife consisting of animals, birds, insects, etc.
+living in the forest is a national resource, which not only helps
+in maintaining the ecological balance but is also beneficial for various
+economic activities that generate revenue from tourism. The rich flora
+and fauna also play a major role in maintaining the ecological balance of
+a region. There was a time when human needs were minimal and there was
+bare interference in the wildlife. There is no denying the fact that due to urbanization
+,pollution, and human interventions wildlife is rapidly disappearing from the planet.
+Today the biodiversity of the world is threatened due to the extinction of species.
+ There are thirty-five hotspots around the world, which supports 43% of birds, mammals, reptiles,
+and amphibians as endemic. The IUCN has compiled a list of species and has classified the different
+ species under extinct, critically endangered, less endangered, vulnerable, near threatened, and least
+concerned. This list is called the Red Data Book. According to the World Wildlife Fund (WWF), the number
+ of birds, animals, marine and freshwater creatures has dropped by almost one-third of its earlier population.
+Today the biodiversity of the world is threatened due to the extinction of species.
+ There are thirty-five hotspots around the world, which supports 43% of birds, mammals, reptiles,
+and amphibians as endemic. The IUCN has compiled a list of species and has classified the different
+
+manasiborade@manasiborade07:~/assignment1_prob2$ sort duplicate.txt|uniq
+
+ There are thirty-five hotspots around the world, which supports 43% of birds, mammals, reptiles,
+ of birds, animals, marine and freshwater creatures has dropped by almost one-third of its earlier population.
+ species under extinct, critically endangered, less endangered, vulnerable, near threatened, and least
+,pollution, and human interventions wildlife is rapidly disappearing from the planet.
+Like forests, wildlife consisting of animals, birds, insects, etc.
+Today the biodiversity of the world is threatened due to the extinction of species.
+a region. There was a time when human needs were minimal and there was
+and amphibians as endemic. The IUCN has compiled a list of species and has classified the different
+and amphibians as endemic. The IUCN has compiled a list of species and has classified the different
+and fauna also play a major role in maintaining the ecological balance of
+bare interference in the wildlife. There is no denying the fact that due to urbanization
+concerned. This list is called the Red Data Book. According to the World Wildlife Fund (WWF), the number
+economic activities that generate revenue from tourism. The rich flora
+in maintaining the ecological balance but is also beneficial for various
+living in the forest is a national resource, which not only helps
+
+manasiborade@manasiborade07:~/assignment1_prob2$ touch fruit.txt
+manasiborade@manasiborade07:~/assignment1_prob2$ cat >>fruit.txt
+
+apple
+mango
+banana
+kiwi
+chickoo
+apple
+mango
+banana
+manasiborade@manasiborade07:~/assignment1_prob2$ sort fruit.txt|uniq -c
+      2 apple
+      2 banana
+      1 chickoo
+      1 kiwi
+      2 mango
